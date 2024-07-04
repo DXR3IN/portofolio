@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="website icon" type="jpg" href="./files/profile2.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Portofolio - Muhammad Irfan</title>
+  </head>
+  <body class="bg-indigo-900">
+    <!-- Canva for Grid Animation -->
+    <canvas id="gridPatternCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header id="head">
+      <nav class="border-gray-200/60 bg-gray-900/60">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >IVAN</span
+            ><span class="text-blue-700 text-2xl font-semibold">CODE</span>
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <a
+              href="https://github.com/DXR3IN"
+              type="button"
+              class="text-white bg-blue-700 hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                class="fill-current text-white"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:text-gray-900/60 md:dark:hover:text-blue-500 dark:text-white hover:bg-gray-900/60 hover:text-white md:hover:bg-transparent border-gray-700"
+                  aria-current="page"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#project"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:text-gray-900/60 md:dark:hover:text-blue-500 dark:text-white hover:bg-gray-900/60 hover:text-white md:hover:bg-transparent border-gray-700"
+                  >Project</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:text-gray-900/60 md:dark:hover:text-blue-500 dark:text-white hover:bg-gray-900/60 hover:text-white md:hover:bg-transparent border-gray-700"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#certificate"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:text-gray-900/60 md:dark:hover:text-blue-500 dark:text-white hover:bg-gray-900/60 hover:text-white md:hover:bg-transparent border-gray-700"
+                  >Certificate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navigation -->
+
+    <!-- Main Pages -->
+    <div class="mx-7 md:mx-44 md:mt-36">
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-4 z-10 my-24">
+        <div class="my-auto mx-auto">
+          <div class="relative w-full max-w-lg">
+            <div
+              class="circle-2 md:h-64 md:w-64 h-40 w-40 rounded-full bg-gray-900/60 pointer-events-none mix-blend-difference absolute md:-top-16 md:-right-2 -top-9 right-24"
+            ></div>
+            <div
+              class="circle-2 md:h-64 md:w-64 h-40 w-40 rounded-full bg-gray-900/60 pointer-events-none mix-blend-difference absolute md:-top-16 md:-right-2 -top-9 right-24 animate-ping"
+            ></div>
+            <div
+              class="circle-2 md:h-16 md:w-16 h-8 w-8 rounded-full bg-gray-900/60 pointer-events-none mix-blend-difference absolute md:top-32 md:left-16 top-20 left-14 animate-ping duration-700"
+            ></div>
+            <div
+              class="circle-2 md:h-16 md:w-16 h-8 w-8 rounded-full bg-gray-900/60 pointer-events-none mix-blend-difference absolute md:top-32 md:left-16 top-20 left-14"
+            ></div>
+          </div>
+          <p class="text-gray-300 font-semibold text-xl md:text-3xl">
+            Hallo!<span class="text-3xl md:text-6xl">🙌</span>
+          </p>
+          <p class="font-semibold text-gray-200 text-4xl md:text-6xl">
+            I'm <span class="font-bold text-6xl md:text-8xl">IVAN</span>
+          </p>
+          <p class="text-gray-300 text-xl font-bold">
+            Mobile Developer | Web Developer | Machine Learning enthusiast
+          </p>
+          <p class="text-gray-400">A passionate Web and Mobile Developer</p>
+          <div class="grid grid-cols-2 my-10">
+            <a
+              href="#contact"
+              class="animate btn-bg- rounded-2xl px-8 py-3 bg-blue-700 hover:bg-indigo-600 text-base font-semibold text-white shadow-sm flex justify-center items-center pop-on-hover"
+              >About me</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1sSR-Kn7PzyHmPzjkaJIrOKvzSm6j4kUG/view?usp=sharing"
+              class="animate btn-bg-secondary bg-blue-700/30 hover:bg-indigo-500 mx-2 rounded-2xl px-6 py-3 text-base text-white font-semibold flex justify-center items-center pop-on-hover"
+              >Resume CV</a
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center lg:mt-11 relative">
+          <img
+            src="./files/profile2.jpg"
+            class="rounded-full bg-indigo-900/70 w-40 md:w-96 pop-on-hover"
+            style="box-shadow: 0 0 30px #070548"
+          />
+        </div>
+      </div>
+
+      <!-- About Pages -->
+      <div id="about" class="mt-32 mb-64 pt-10">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 text-center">
+              <h4 class="text-gray-200 mb-2 text-lg font-bold uppercase">
+                ABOUT ME
+              </h4>
+              <h2 class="text-white lg:text-1xl text-3xl font-bold sm:text-4xl">
+                Let's get acquainted
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="mb-10 w-full px-4 lg:w-1/2">
+              <h2
+                class="text-white mb-5 max-w-md text-3xl font-bold lg:text-4xl"
+              >
+                Muhammad Irfan
+              </h2>
+              <p
+                class="text-gray-300 max-w-xl text-justify text-base font-medium lg:text-lg"
+              >
+                I'm a tech enthusiast with a background in computer engineering.
+                Eager to learn more about mobile development, web development,
+                and machine learning, my interests include creating a design,
+                creating user-friendly web applications, and creating a machine
+                learning models (still need much to learn thought). I'm also
+                focused on improving my problem-solving skills and building
+                strong relationships with my teammates. Thrilled about
+                collaborating and developing in a fast-paced setting.
+              </p>
+            </div>
+            <div class="w-full px-4 lg:w-1/2">
+              <h3
+                class="text-white mb-4 text-2xl font-semibold lg:pt-10 lg:text-3xl"
+              >
+                Let's Connect
+              </h3>
+              <p class="text-gray-400 mb-6 text-base font-medium lg:text-lg">
+                I'm thrilled to connect with everyone who's curious and
+                passionate about technology! Let's explore new possibilities and
+                learn together.
+              </p>
+              <div class="flex items-center gap-3">
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/muhammad-irfan-938813301/"
+                  target="_blank"
+                  class="pop-on-hover md:mr-4 mr-6"
+                >
+                  <svg
+                    role="img"
+                    width="20"
+                    class="fill-current text-white md:scale-125 scale-150"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>LinkedIn</title>
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <!-- Github -->
+                <a
+                  href="https://github.com/DXR3IN"
+                  target="_blank"
+                  class="pop-on-hover md:mr-4 mr-6"
+                >
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    class="fill-current text-white md:scale-125 scale-150"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/mhdirfn1?igsh=MXEzc3VzeXhjNzJl"
+                  target="_blank"
+                  class="pop-on-hover md:mr-4 mr-6"
+                >
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    class="fill-current text-white md:scale-125 scale-150"
+                  >
+                    <title>Instagram</title>
+                    <path
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://wa.me/6289625313937"
+                  target="_blank"
+                  class="pop-on-hover md:mr-4"
+                >
+                  <svg
+                    class="fill-current text-white md:scale-125 scale-150"
+                    aria-hidden="true"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>WhatsApp</title>
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of About Pages -->
+
+      <!-- Project Pages -->
+      <div id="project" class="mt-32 mb-64 pt-10">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 max-w-xl text-center">
+              <h4 class="text-gray-300 mb-2 text-lg font-semibold uppercase">
+                Project
+              </h4>
+              <h2 class="text-white lg:text-1xl text-3xl font-bold sm:text-4xl">
+                Project Overview
+              </h2>
+            </div>
+
+            <div class="container p-10 bg-gray-900/60 rounded-3xl pop-on-hover">
+              <div class="flex flex-row gap-8">
+                <div class="mx-auto hidden max-w-40 px-12 md:block md:pb-24">
+                  <div
+                    class="relative top-0 mt-4 pt-1.5 md:sticky md:top-[86px]"
+                  >
+                    <div
+                      class="text-gray-300 flex-grow font-sora font-semibold"
+                    >
+                      <time datetime="2024-06-25" class="w-20">25/06/2024</time>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="dark:border-divider-dark border-divider-light items-stretch border dark:border-light2/10"
+                ></div>
+                <div
+                  class="flex min-w-0 flex-1 flex-col gap-16 md:gap-0 md:py-4"
+                >
+                  <article class="md:pb-16">
+                    <div
+                      class="fm:relative fm:top-0 pointer-events-none sticky top-[86px] -ml-10 pb-12 md:-ml-[2rem] lg:-ml-[3%]"
+                    >
+                      <div
+                        class="absolute -ml-0.5 mt-2.5 h-4 w-4 rounded-full border-2 border-slate-700 bg-white dark:border-slate-300 dark:bg-slate-900 md:-ml-3 md:mt-2 md:h-5 md:w-5"
+                      ></div>
+                      <div
+                        class="absolute z-[-1] -ml-2 mt-4 w-8 border border-slate-700 dark:border-slate-300 md:-ml-4 md:w-10 lg:w-12"
+                      ></div>
+                    </div>
+                    <div class="container flex">
+                      <div class="-mt-12">
+                        <h2 class="text-white mt-1 text-xl font-semibold">
+                          Yap2Type
+                        </h2>
+                        <div class="mb-2 mt-1">
+                          <span class="text-green-500">#App</span>
+                          <p class="text-gray-200 mt-2 text-justify">
+                            <a href="" class="font-semibold text-red-600"
+                              >Yap2Type</a
+                            >
+                            is a cutting-edge tool made to assist users in
+                            summarizing audio-based content such as news,
+                            podcasts, conferences, and conversations. Users can
+                            record or upload audio files to the application, and
+                            artificial intelligence is used to distill the
+                            content into clear, short bullet points. Users can
+                            save time and effort by using Yap2Type to rapidly
+                            obtain an overview of conversations or discussions
+                            without having to listen to the full recording
+                            again. Students, journalists, business
+                            professionals, and anybody else who wants a rapid
+                            way to absorb the main ideas from long talks may
+                            find this approach very helpful. Yap2Type supports a
+                            number of audio formats and has an adjustable
+                            summary level. The app's cutting-edge AI technology
+                            provides precise and pertinent summaries, enhancing
+                            productivity and assisting users in maintaining
+                            focus on what matters.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="flex flex-row gap-8">
+                <!-- LG -->
+                <div class="mx-auto hidden max-w-40 px-12 md:block md:pb-24">
+                  <div
+                    class="relative top-0 mt-4 pt-1.5 md:sticky md:top-[86px]"
+                  >
+                    <div
+                      class="text-gray-300 flex-grow font-sora font-semibold"
+                    >
+                      <time datetime="2022-02-11" class="w-20">12/06/2023</time>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-divider-dark items-stretch border"></div>
+                <div
+                  class="flex min-w-0 flex-1 flex-col gap-16 md:gap-0 md:py-4"
+                >
+                  <article class="md:pb-16">
+                    <div
+                      class="fm:relative fm:top-0 pointer-events-none sticky top-[86px] -ml-10 pb-12 md:-ml-[2rem] lg:-ml-[3%]"
+                    >
+                      <div
+                        class="absolute -ml-0.5 mt-2.5 h-4 w-4 rounded-full border-2 border-slate-700 bg-white dark:border-slate-300 dark:bg-slate-900 md:-ml-3 md:mt-2 md:h-5 md:w-5"
+                      ></div>
+                      <div
+                        class="absolute z-[-1] -ml-2 mt-4 w-8 border border-slate-700 dark:border-slate-300 md:-ml-4 md:w-10 lg:w-12"
+                      ></div>
+                    </div>
+                    <div class="container flex">
+                      <div class="-mt-12">
+                        <h2 class="text-white mt-1 text-xl font-semibold">
+                          StrawberryCaffe
+                        </h2>
+                        <div class="mb-2 mt-1">
+                          <span class="text-blue-400">#Web</span>
+                          <p class="text-gray-200 mt-2 text-justify">
+                            This project is part of the final exam for the Third
+                            Semester Website course. It was developed using
+                            Laravel 10, TailwindCSS, and a MySQL database. The
+                            project is specifically designed for a café,
+                            incorporating features that cater to the unique
+                            needs of such a business. The use of Laravel 10
+                            ensures a robust backend framework, while
+                            TailwindCSS provides a modern and responsive design.
+                            The MySQL database is used to efficiently manage and
+                            store data, making this project a comprehensive
+                            solution for café management.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Project Pages -->
+
+      <!-- Skills Page -->
+      <div id="skills" class="mt-32 mb-64 pt-10">
+        <!-- All Skills Pages -->
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 text-center">
+              <h4 class="text-gray-200 mb-2 text-lg font-bold uppercase">
+                skills & Tools
+              </h4>
+              <h2 class="text-white lg:text-1xl text-3xl font-bold sm:text-4xl">
+                Overview and Expertise
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-wrap lg:p-0">
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2xl md:flex lg:w-full pop-on-hover div-animation odd"
+              >
+                <div class="px-6 py-8">
+                  <h5 class="text-white text-xl font-semibold tracking-wide">
+                    Machine Learning
+                  </h5>
+                  <h3 class="text-gray-100 font-base my-3 dark:text-light2">
+                    I've completed the Bangkit Academy Google Machine Learning,
+                    where I learned various aspects of machine learning.
+                  </h3>
+                  <div class="flex flex-row flex-wrap" style="gap: 12px">
+                    <span class="label text-white" style="gap: 8px"
+                      >TensorFlow
+                      <span class="label-indicator" style="width: 80%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Data Analysis
+                      <span class="label-indicator" style="width: 100%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Python
+                      <span class="label-indicator" style="width: 100%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >CNN
+                      <span class="label-indicator" style="width: 78%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >NLP
+                      <span class="label-indicator" style="width: 92%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Hugging-face
+                      <span class="label-indicator" style="width: 100%"> </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation"
+              >
+                <div class="px-6 py-8">
+                  <h5 class="text-white text-xl font-semibold tracking-wide">
+                    Programming Language
+                  </h5>
+                  <h3 class="text-gray-100 font-base my-3 dark:text-light2">
+                    I've acquired a range of programming skills and regularly
+                    use them in my projects.
+                  </h3>
+                  <div class="flex flex-row flex-wrap" style="gap: 12px">
+                    <span class="label text-white" style="gap: 8px"
+                      >JavaScript
+                      <span class="label-indicator" style="width: 75%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Java
+                      <span class="label-indicator" style="width: 85%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Dart
+                      <span class="label-indicator" style="width: 85%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Python
+                      <span class="label-indicator" style="width: 20%"> </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation odd"
+              >
+                <div class="px-6 py-8">
+                  <h5 class="text-white text-xl font-semibold tracking-wide">
+                    Web Development
+                  </h5>
+                  <h3 class="text-gray-100 font-base my-3 dark:text-light2">
+                    I've learned a variety of concepts and techniques in web
+                    development.
+                  </h3>
+                  <div class="flex flex-row flex-wrap" style="gap: 12px">
+                    <span class="label text-white" style="gap: 8px"
+                      >HTML
+                      <span class="label-indicator" style="width: 100%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >CSS
+                      <span class="label-indicator" style="width: 95%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >JavaScript
+                      <span class="label-indicator" style="width: 85%"> </span>
+                    </span>
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Bootstrap
+                      <span class="label-indicator" style="width: 20%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >TailwindCSS
+                      <span class="label-indicator" style="width: 89%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >MySQL
+                      <span class="label-indicator" style="width: 87%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Postman
+                      <span class="label-indicator" style="width: 60%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >GIT
+                      <span class="label-indicator" style="width: 95%"> </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation"
+              >
+                <div class="px-6 py-8">
+                  <h5 class="text-white text-xl font-semibold tracking-wide">
+                    Mobile
+                  </h5>
+                  <h3 class="text-gray-100 font-base my-3 dark:text-light2">
+                    I've gained knowledge in various areas of mobile
+                    development.
+                  </h3>
+                  <div class="flex flex-row flex-wrap" style="gap: 12px">
+                    <span class="label text-white" style="gap: 8px"
+                      >Android Native
+                      <span class="label-indicator" style="width: 70%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Flutter
+                      <span class="label-indicator" style="width: 80%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Dart
+                      <span class="label-indicator" style="width: 50%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Kotlin
+                      <span class="label-indicator" style="width: 76%"> </span>
+                    </span>
+
+                    <div
+                      class="bg-indigo-600 text-white px-1 drop-shadow-lg rounded-md"
+                    ></div>
+                    <span class="label text-white" style="gap: 8px"
+                      >Java
+                      <span class="label-indicator" style="width: 70%"> </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of All Skills Pages -->
+
+        <!-- Bangkit Info Page -->
+        <div class="container pt-32">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 text-center">
+              <h4 class="text-white mb-2 text-lg font-bold uppercase">
+                Bangkit Academy 2024 Batch 1
+              </h4>
+              <h2
+                class="text-white lg:text-1xl text-3xl font-bold sm:text-4xl my-4"
+              >
+                <span class="text-red-600">Machine</span> Learning
+              </h2>
+              <p class="text-md text-white mt-2 font-medium md:text-lg">
+                One of <span class="text-red-600">4,650</span> selected students
+                in Bangkit Academy. Bangkit is a career readiness program that
+                aims to produce high-caliber technical talent for world-class
+                Indonesian technology companies and startups, fully supported by
+                Google, GoTo, and Traveloka.
+              </p>
+              <h3 class="font-bold italic text-red-600 text-2xl mt-6">Still on Progress: End 15 July 2024</h3>
+            </div>
+          </div>
+
+          <div class="w-full px-4">
+            <div class="flex flex-wrap items-center justify-center">
+              <a
+                href="https://grow.google/intl/id_id/bangkit/"
+                class="mx-4 max-w-[200px] py-4 opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 hidden marker:lg:mx-6 xl:mx-8"
+                target="_blank"
+              >
+                <img src="./files/bangkit.svg" alt="Bangkit Academy" />
+              </a>
+              <a
+                href="https://grow.google/intl/id_id/bangkit/"
+                class="mx-4 max-w-[200px] py-4 opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 block lg:mx-6 xl:mx-8"
+                target="_blank"
+              >
+                <img src="./files/bangkit-white.svg" alt="Bangkit Academy" />
+              </a>
+              <a
+                href="https://grow.google/intl/id_id/"
+                class="mx-4 max-w-[120px] py-4 opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <img src="./files/google.svg" alt="Google" target="_blank" />
+              </a>
+              <a
+                href="https://www.gotocompany.com/"
+                class="mx-4 max-w-[120px] py-4 opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <img src="./files/goto.svg" alt="Goto" target="_blank" />
+              </a>
+              <a
+                href="https://www.traveloka.com/en-id"
+                class="mx-4 max-w-[120px] py-4 opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <img
+                  src="./files/traveloka.svg"
+                  alt="Traveloka"
+                  target="_blank"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End of Bangkit Info Page -->
+      </div>
+      <!-- End of Skills Page -->
+
+      <!-- Certificate Pages -->
+      <div id="certificate" class="mt-32 mb-64 pt-10">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 text-center">
+              <h4 class="text-gray-200 mb-2 text-lg font-bold uppercase">
+                CERTICIFICATE
+              </h4>
+              <h2 class="text-white lg:text-1xl text-3xl font-bold sm:text-4xl">
+                All Certicate Till Date
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-wrap lg:p-0">
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2xl md:flex lg:w-full pop-on-hover div-animation odd"
+              >
+                <a
+                  href="https://coursera.org/share/6e34cf0aa12560f347fdcfbe0bd3fc58"
+                  class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900/60"
+                >
+                  <img
+                    class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none"
+                    src="./files/cert/cert-company/coursera.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      Machine Learning Specialization
+                    </h5>
+                    <p
+                      class="mb-3 font-normal text-gray-400"
+                    >
+                    The Machine Learning Specialization is a beginner-level program for those new to AI, offering foundational knowledge and hands-on experience with machine learning models using Python.
+                    </p>
+                    <h6 class="text-blue-400">Click to see Certificate</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation"
+              >
+                <a
+                  href="https://coursera.org/share/8580264209a7e4dd6d201581c806f422"
+                  class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900/60"
+                >
+                  <img
+                    class="object-cover w-full rounded-t-lg h-full md:h-auto md:w-48 md:rounded-none"
+                    src="./files/cert/cert-company/coursera.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      DeepLearning.AI TensorFlow Developer
+                    </h5>
+                    <p
+                      class="mb-3 font-normal text-gray-400"
+                    >
+                      The DeepLearning.AI TensorFlow Developer Professional
+                      Certificate program teaches you applied machine learning
+                      skills with TensorFlow so you can build and train powerful
+                      models.
+                    </p>
+                    <h6 class="text-blue-400">Click to see Certificate</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation odd"
+              >
+                
+              <a
+              href="https://coursera.org/share/19ffb753e220c97d501c0477099e902e"
+              class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900/60"
+              >
+                <img
+                  class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none"
+                  src="./files/cert/cert-company/coursera.png"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-white"
+                  >
+                    TensorFlow: Advanced Techniques
+                  </h5>
+                  <p
+                    class="mb-3 font-normal text-gray-400"
+                  >
+                  The TensorFlow: Advanced Techniques Specialization provides an accessible pathway for early and mid-career software and machine learning engineers with a foundational knowledge of TensorFlow.
+                  </p>
+                  <h6 class="text-blue-400">Click to see Certificate</h6>
+                </div>
+              </a>
+
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation"
+              >
+                
+                <a
+                href="hhttps://coursera.org/share/cf0871e8601026ab0732c9dae247d28e"
+                class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900/60"
+                >
+                  <img
+                    class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none"
+                    src="./files/cert/cert-company/coursera.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      Generative AI for Everyone
+                    </h5>
+                    <p
+                      class="mb-3 font-normal text-gray-400"
+                    >
+                    Generative AI for Everyone includes hands-on exercises where you'll learn to use generative AI to help in day-to-day work and receive tips on effective prompt engineering, as well as learning how to go beyond prompting for more advanced uses of AI.
+                    </p>
+                    <h6 class="text-blue-400">Click to see Certificate</h6>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation odd"
+              >
+                
+              <a
+              href="https://coursera.org/share/d05fd9371ca5a1a8a80a2b11a55f8769"
+              class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900/60"
+              >
+                <img
+                  class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none"
+                  src="./files/cert/cert-company/Google.png"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-white"
+                  >
+                    Crash Course on Python
+                  </h5>
+                  <p
+                    class="mb-3 font-normal text-gray-400"
+                  >
+                  Crash Course on Python is designed to teach you the foundations in order to write simple programs in Python using the most common structures. No previous exposure to programming is needed.
+                  </p>
+                  <h6 class="text-blue-400">Click to see Certificate</h6>
+                </div>
+              </a>
+
+              </div>
+            </div>
+            <div class="flex w-full px-4 lg:w-1/2">
+              <div
+                class="border-divider-light menu-items-blur mb-10 overflow-hidden rounded-xl bg-gray-900/60 shadow-2x md:flex lg:w-full pop-on-hover div-animation"
+              >
+                
+                <a
+                href="https://certs.duolingo.com/c19cb1b8558858dfad7f48a37a874817"
+                class="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-900"
+                >
+                  <img
+                    class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none"
+                    src="./files/cert/cert-company/duolingo.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      Duolingo English Test
+                    </h5>
+                    
+                    <p class="mb-3 font-normal text-gray-400">Test point: <span class="font-semibold text-orange-500">115</span></p>
+                    <p
+                      class="mb-3 font-normal text-gray-400"
+                    >
+                    Duolingo is a standardized English test designed to be internet-based and not paper-based. DET is an adaptive test that uses an algorithm to adjust the level of test difficulty to the test taker.
+                    </p>
+                    <h6 class="text-blue-400">Click to see Certificate</h6>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Main Pages -->
+
+    <!-- Footer -->
+    <svg
+      id="wave"
+      style="transform: rotate(0deg); transition: 0.3s"
+      viewBox="0 0 1440 200"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(17, 24, 39, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(49, 46, 129, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,80L120,96.7C240,113,480,147,720,133.3C960,120,1200,60,1440,36.7C1680,13,1920,27,2160,33.3C2400,40,2640,40,2880,60C3120,80,3360,120,3600,143.3C3840,167,4080,173,4320,170C4560,167,4800,153,5040,146.7C5280,140,5520,140,5760,136.7C6000,133,6240,127,6480,113.3C6720,100,6960,80,7200,80C7440,80,7680,100,7920,106.7C8160,113,8400,107,8640,110C8880,113,9120,127,9360,133.3C9600,140,9840,140,10080,123.3C10320,107,10560,73,10800,56.7C11040,40,11280,40,11520,53.3C11760,67,12000,93,12240,113.3C12480,133,12720,147,12960,143.3C13200,140,13440,120,13680,103.3C13920,87,14160,73,14400,56.7C14640,40,14880,20,15120,20C15360,20,15600,40,15840,70C16080,100,16320,140,16560,140C16800,140,17040,100,17160,80L17280,60L17280,200L17160,200C17040,200,16800,200,16560,200C16320,200,16080,200,15840,200C15600,200,15360,200,15120,200C14880,200,14640,200,14400,200C14160,200,13920,200,13680,200C13440,200,13200,200,12960,200C12720,200,12480,200,12240,200C12000,200,11760,200,11520,200C11280,200,11040,200,10800,200C10560,200,10320,200,10080,200C9840,200,9600,200,9360,200C9120,200,8880,200,8640,200C8400,200,8160,200,7920,200C7680,200,7440,200,7200,200C6960,200,6720,200,6480,200C6240,200,6000,200,5760,200C5520,200,5280,200,5040,200C4800,200,4560,200,4320,200C4080,200,3840,200,3600,200C3360,200,3120,200,2880,200C2640,200,2400,200,2160,200C1920,200,1680,200,1440,200C1200,200,960,200,720,200C480,200,240,200,120,200L0,200Z"
+      ></path>
+    </svg>
+    <footer class="rounded-lg shadow bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 bg-gray-900">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >IVAN</span
+            ><span class="text-blue-700 text-2xl font-semibold">CODE</span>
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="https://github.com/DXR3IN/portofolio" class="hover:underline me-4 md:me-6">Source Code</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024 Muhammad Irfan. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Navigation Ball to Top -->
+    <a href="#head" id="back-to-top">
+      <div
+        class="cursor-pointer shadow-lg fixed md:w-12 md:h-12 w-3 h-3 bg-gray-900/60 rounded-full border-white right-0 bottom-0 md:m-12 m-6 p-8 flex justify-center items-center text-white border"
+      >
+        <h1>^</h1>
+      </div>
+    </a>
+    <!--End of Navigation Ball to Top -->
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  </body>
+</html>

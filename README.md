@@ -1,4 +1,4 @@
-# My Portofolio Webiste
+# My Portofolio Website
 
 Minus: 
 1. Not yet compatible with all monitor or smartphone size
